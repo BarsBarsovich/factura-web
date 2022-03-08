@@ -6,10 +6,69 @@
     max-width: 383px;
     max-height: 288px;
   }
+
   &__title {
     font-weight: 300;
     font-size: 20px;
     color: #000000;
     margin-top: 20px;
+  }
+
+  &__photo {
+    width: 383px;
+    height: 560px;
+
+    &_high {
+      height: 681px;
+    }
+
+    &_wide {
+      width: 100%;
+    }
+
+    &_medium-height {
+      height: 510px;
+    }
+
+    &_big {
+      width: 795px;
+      height: 1051px;
+    }
+
+    &_biggest {
+      width: 808px;
+      height: 100%;
+    }
+
+    &_small {
+      width: 388px;
+      height: 517px;
+    }
+
+    &_h99 {
+      height: 99%;
+    }
+
+  }
+
+  &_big {
+    grid-column: span 2;
+  }
+
+  &_wide {
+    grid-column: span 3;
+  }
+
+  &_height {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  &_ml29 {
+    margin-left: 29px;
+  }
+
+  &_ml18 {
+    margin-left: 18px;
   }
 }

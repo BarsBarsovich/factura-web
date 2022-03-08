@@ -1,0 +1,44 @@
+.ellipse {
+  width: 364px;
+  height: 560px;
+  background: #E8E8E8;
+  //filter: blur(15px);
+  border-radius: 280px;
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  font-size: 22px;
+  color: #202020;
+
+  &_top {
+    align-items: flex-start;
+  }
+
+  &__container {
+    padding-right: 41px;
+    padding-left: 41px;
+    //height: 100%;
+
+  }
+
+  &_grey {
+    background: #999999
+  }
+
+  &_green {
+    background: #809984;
+  }
+
+  &_light-blue {
+    background: #C7D4DC;
+  }
+
+  &_orange {
+    background: #FA8C31;
+  }
+
+
+  &__text {
+    margin-top: -207px;
+  }
+}

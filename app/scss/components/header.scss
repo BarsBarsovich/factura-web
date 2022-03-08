@@ -12,8 +12,6 @@
   }
 
   &__button {
-    // grid-column: 3/4;
-    // margin-right: 15px;
     &-link {
       background: #fa8c31;
       border-radius: 30px;
@@ -30,6 +28,19 @@
         background: darken(#fa8c31, 10%);
       }
       //   padding-right: 15px;
+    }
+
+    &-connect {
+      width: 122px;
+      height: 36px;
+      border: 2px solid #000000;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: normal;
+      font-size: 20px;
+      color: #000000;
     }
   }
 }

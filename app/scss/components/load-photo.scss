@@ -1,0 +1,17 @@
+.load-photo {
+  &__button {
+    width: 115px;
+    height: 36px;
+    border: 2px solid #FA8C31;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    font-size: 20px;
+    color: #FA8C31;
+    cursor: pointer;
+  }
+}
