@@ -1,0 +1,15 @@
+.card {
+  display: flex;
+  flex-direction: column;
+
+  &__logo {
+    max-width: 383px;
+    max-height: 288px;
+  }
+  &__title {
+    font-weight: 300;
+    font-size: 20px;
+    color: #000000;
+    margin-top: 20px;
+  }
+}

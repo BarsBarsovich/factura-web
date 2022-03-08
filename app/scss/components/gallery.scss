@@ -1,0 +1,11 @@
+.gallery {
+  display: grid;
+  grid-template: 1fr / 1fr minmax(auto, 1200px) 1fr;
+  &__container {
+    grid-column: 2/3;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+    margin-bottom: 120px;
+  }
+}
