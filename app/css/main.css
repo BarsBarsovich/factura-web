@@ -17,6 +17,7 @@ h6 {
 ul {
   margin: 0;
   list-style-type: none;
+  margin: 0;
   padding: 0; }
 
 a {
@@ -159,6 +160,8 @@ body {
     font-size: 20px;
     color: #000000;
     margin-top: 20px; }
+    .card__title:hover {
+      color: #333333; }
   .card__photo {
     width: 383px;
     height: 560px; }
