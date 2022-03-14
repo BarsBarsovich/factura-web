@@ -19,7 +19,6 @@ h6 {
 ul {
   margin: 0;
   list-style-type: none;
-  margin: 0;
   padding: 0;
 }
 
@@ -39,4 +38,15 @@ body {
     "header"
     "main"
     "footer";
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+img  {
+  display: block;
+  width: 100%;
+  object-fit: cover;
 }

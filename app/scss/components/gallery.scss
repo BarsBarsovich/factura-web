@@ -8,6 +8,7 @@
     gap: 24px;
     grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
     margin-bottom: 120px;
+    width: 100%;
 
     &_mb-40 {
       margin-bottom: 41px;
@@ -30,6 +31,9 @@
 
     &-logo {
       width: 795px;
+      &_wide {
+        width: 808px;
+      }
     }
 
     &_big {

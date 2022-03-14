@@ -17,7 +17,6 @@ h6 {
 ul {
   margin: 0;
   list-style-type: none;
-  margin: 0;
   padding: 0; }
 
 a {
@@ -31,6 +30,16 @@ body {
   min-height: 100%;
   grid-template: minmax(80px, auto) 1fr minmax(70px, auto)/1fr;
   grid-template-areas: "header" "main" "footer"; }
+
+.container {
+  width: 1200px;
+  margin: 0 auto; }
+
+img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; }
 
 .header {
   grid-area: header;
@@ -98,7 +107,8 @@ body {
     display: grid;
     gap: 24px;
     grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
-    margin-bottom: 120px; }
+    margin-bottom: 120px;
+    width: 100%; }
     .gallery__container_mb-40 {
       margin-bottom: 41px; }
     .gallery__container_hidden {
@@ -120,6 +130,8 @@ body {
             justify-content: flex-start; }
     .gallery__card-logo {
       width: 795px; }
+      .gallery__card-logo_wide {
+        width: 808px; }
     .gallery__card_big {
       grid-column: span 2; }
   .gallery__description {
@@ -163,7 +175,6 @@ body {
     .card__title:hover {
       color: #333333; }
   .card__photo {
-    width: 383px;
     height: 560px; }
     .card__photo_high {
       height: 681px; }
