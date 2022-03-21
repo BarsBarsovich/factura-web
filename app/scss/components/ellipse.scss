@@ -9,6 +9,9 @@
   font-weight: 300;
   font-size: 22px;
   color: #202020;
+  @include tablets(){
+    width: 100%;
+  }
 
   &_top {
     align-items: flex-start;

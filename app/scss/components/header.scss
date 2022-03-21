@@ -3,12 +3,16 @@
   display: grid;
   grid-template: 1fr / 1fr minmax(auto, 1200px) 1fr;
   align-items: center;
+  @include tablets(){
+    grid-template: 1fr / 1fr minmax(auto, 800px) 1fr;
+  }
 
   &__container {
     grid-column: 2/3;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
   }
 
   &__button {

@@ -1,172 +1,237 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/normalize.css"/>
-    <link rel="stylesheet" href="./css/main.css"/>
-</head>
-<body>
-<div class="wrapper layout">
-    <header class="header">
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper layout">
+      <header class="header">
         <div class="header__container container">
-            <div class="header__logo">
-                <a href="/" class="">
-                    <img src="./img/logo.svg" loading="lazy" alt="" class="header__logo-img"/>
-                </a>
-            </div>
-            <div class="header__button">
-                <a href="#" class="header__button-connect">connect</a>
-            </div>
+          <div class="header__logo">
+            <a href="/" class="">
+              <img
+                src="./img/logo.svg"
+                loading="lazy"
+                alt=""
+                class="header__logo-img"
+              />
+            </a>
+          </div>
+          <div class="header__button">
+            <a href="#" class="header__button-connect">connect</a>
+          </div>
         </div>
-    </header>
-    <main class="main">
+      </header>
+      <main class="main">
         <div class="gallery">
-            <div class="gallery__container container gallery__container_mb-40">
-                <div class="gallery__card">
-                    <picture>
-                        <img src="./img/private-window.png" srcset="./img/private-window.png 2x" loading="lazy" alt="" class="gallery__card-logo_wide"/>
-                    </picture>
-                    <div class="gallery__description gallery__description_height">
+          <div class="gallery__container container gallery__container_mb-40">
+            <div class="gallery__card">
+              <picture class="mobile">
+                <img
+                  src="./img/private-window.png"
+                  srcset="./img/private-window.png 2x"
+                  loading="lazy"
+                  alt=""
+                  class="gallery__card-logo_wide gallery__card-logo_mobile"
+                />
+              </picture>
+              <div class="gallery__description gallery__description_height">
+                <p class="gallery__text">Частная квартира в Москве 2020</p>
 
-                        <p class="gallery__text">
-                            Частная квартира в Москве
-                            2020
-                        </p>
+                <p class="gallery__text">
+                  Дизайн Геннадия Дружинина и Даниила Наринского Фотографии Маши
+                  unionofknives
+                </p>
 
-                        <p class="gallery__text">
-                            Дизайн Геннадия Дружинина
-                            и Даниила Наринского
-                            Фотографии Маши unionofknives
-                        </p>
+                <p class="gallery__text">
+                  Задачи: Проектирование, изготовление и выездной монтаж изделий
+                </p>
 
-                        <p class="gallery__text">
-                            Задачи:
-                            Проектирование, изготовление
-                            и выездной монтаж изделий
-                        </p>
+                <p class="gallery__text">
+                  Изделия: Изголовье кровати, переходящее в подоконник, кровать,
+                  встроенный шкаф, тумбочка под раковину.
+                </p>
+                <p class="gallery__text">
+                  Материалы: Фанера, МДФ в эмали, ткань.
+                </p>
 
-                        <p class="gallery__text">
-                            Изделия:
-                            Изголовье кровати, переходящее в подоконник, кровать, встроенный шкаф, тумбочка под
-                            раковину.
-                        </p>
-                        <p class="gallery__text">
-                            Материалы:
-                            Фанера, МДФ в эмали, ткань.
-                        </p>
-
-                        <div class="gallery__description-photo">
-                            <img src="./img/small.png" alt="card__photo card__photo_small">
-
-                        </div>
-
-
-                    </div>
+                <div class="gallery__description-photo">
+                  <img
+                    src="./img/small.png"
+                    alt="card__photo card__photo_small"
+                  />
                 </div>
+              </div>
             </div>
-            <div class="gallery__container container gallery__container_mb-40">
-                <div class="card card_height">
-                    <picture>
-                        <img src="./img/big.png" srcset="./img/big.png 2x" loading="lazy" alt="" class="card__photo card__photo_biggest">
-                    </picture>
-                </div>
-                <div class="card card_ml29">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_medium-height">
-                    </picture>
-                </div>
-                <div class="card card_ml29">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_medium-height">
-                    </picture>
-                </div>
+          </div>
+          <div class="gallery__container container gallery__container_mb-40">
+            <div class="card card_height">
+              <picture class="mobile">
+                <img
+                  src="./img/big.png"
+                  srcset="./img/big.png 2x"
+                  loading="lazy"
+                  alt=""
+                  class="card__photo card__photo_biggest"
+                />
+              </picture>
             </div>
-            <div class="gallery__container container gallery__container_mb-40 gallery__container_hidden" id="morePhoto">
-                <!--                 первый ряд-->
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo">
-                    </picture>
-                </div>
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo">
-                    </picture>
-                </div>
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo">
-                    </picture>
-                </div>
-                <!--                 второй ряд-->
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo">
-                    </picture>
-                </div>
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo">
-                    </picture>
-                </div>
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo">
-                    </picture>
-                </div>
+            <div class="card card_ml29">
+              <picture>
+                <img
+                  src="./img/chairs.png"
+                  srcset="./img/chairs.png 2x"
+                  loading="lazy"
+                  alt=""
+                  class="card__photo card__photo_medium-height"
+                />
+              </picture>
+            </div>
+            <div class="card card_ml29">
+              <picture>
+                <img
+                  src="./img/chairs.png"
+                  srcset="./img/chairs.png 2x"
+                  loading="lazy"
+                  alt=""
+                  class="card__photo card__photo_medium-height"
+                />
+              </picture>
+            </div>
+          </div>
+          <div
+            class="gallery__container container gallery__container_mb-40 gallery__container_hidden"
+            id="morePhoto"
+          >
+            <!--                 первый ряд-->
+            <div class="card">
+              <picture>
+                <img
+                  src="./img/chairs.png"
+                  srcset="./img/chairs.png 2x"
+                  loading="lazy"
+                  alt=""
+                  class="card__photo"
+                />
+              </picture>
+            </div>
+            <div class="card">
+              <picture>
+                <img
+                  src="./img/chairs.png"
+                  srcset="./img/chairs.png 2x"
+                  loading="lazy"
+                  alt=""
+                  class="card__photo"
+                />
+              </picture>
+            </div>
+            <div class="card">
+              <picture>
+                <img
+                  src="./img/chairs.png"
+                  srcset="./img/chairs.png 2x"
+                  loading="lazy"
+                  alt=""
+                  class="card__photo"
+                />
+              </picture>
+            </div>
+            <!--                 второй ряд-->
+            <div class="card">
+              <picture>
+                <img
+                  src="./img/chairs.png"
+                  srcset="./img/chairs.png 2x"
+                  loading="lazy"
+                  alt=""
+                  class="card__photo"
+                />
+              </picture>
+            </div>
+            <div class="card">
+              <picture>
+                <img
+                  src="./img/chairs.png"
+                  srcset="./img/chairs.png 2x"
+                  loading="lazy"
+                  alt=""
+                  class="card__photo"
+                />
+              </picture>
+            </div>
+            <div class="card">
+              <picture>
+                <img
+                  src="./img/chairs.png"
+                  srcset="./img/chairs.png 2x"
+                  loading="lazy"
+                  alt=""
+                  class="card__photo"
+                />
+              </picture>
+            </div>
 
-                <!--                третий ряд-->
-                <div class="card card_big">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_wide">
-                    </picture>
-                </div>
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo">
-                    </picture>
-                </div>
+            <!--                третий ряд-->
+            <div class="card card_big">
+              <picture>
+                <img
+                  src="./img/chairs.png"
+                  srcset="./img/chairs.png 2x"
+                  loading="lazy"
+                  alt=""
+                  class="card__photo card__photo_wide"
+                />
+              </picture>
             </div>
+            <div class="card">
+              <picture>
+                <img
+                  src="./img/chairs.png"
+                  srcset="./img/chairs.png 2x"
+                  loading="lazy"
+                  alt=""
+                  class="card__photo"
+                />
+              </picture>
+            </div>
+          </div>
         </div>
         <div class="next-project">
-            <div class="next-project__container">
-                <div class="load-photo">
-                    <button class="load-photo__button" id="loadMore">
-                        ещё фото
-                    </button>
-                </div>
-                <a href="#" class="next-project__link">
-                    к следующему проекту
-                </a>
+          <div class="next-project__container">
+            <div class="load-photo">
+              <button class="load-photo__button" id="loadMore">ещё фото</button>
             </div>
+            <a href="#" class="next-project__link"> к следующему проекту </a>
+          </div>
         </div>
-
-
-    </main>
-    <footer class="footer">
+      </main>
+      <footer class="footer">
         <div class="footer__container container">
-            <div class="footer__instagram">
-                <a href="#" class="footer__instagram-link"> instagram </a>
-            </div>
-            <div class="footer__phone">
-                <a href="tel:+79955959095" class="footer__text"
-                >+7 (995) 595-90-95</a
-                >
-            </div>
-            <div class="footer__email">
-                <a href="mailto:hello@factura-factory.com" class="footer__text"
-                >hello@factura-factory.com</a
-                >
-            </div>
-            <div class="footer__address">
-                <span class="footer__text"> Санкт-Петербург, Салова 42 </span>
-            </div>
+          <div class="footer__instagram">
+            <a href="#" class="footer__instagram-link"> instagram </a>
+          </div>
+          <div class="footer__phone">
+            <a href="tel:+79955959095" class="footer__text"
+              >+7 (995) 595-90-95</a
+            >
+          </div>
+          <div class="footer__email">
+            <a href="mailto:hello@factura-factory.com" class="footer__text"
+              >hello@factura-factory.com</a
+            >
+          </div>
+          <div class="footer__address">
+            <span class="footer__text"> Санкт-Петербург, Салова 42 </span>
+          </div>
         </div>
-    </footer>
-    <script src="./js/main.js"></script>
-</div>
-</body>
+      </footer>
+      <script src="./js/main.js"></script>
+    </div>
+  </body>
 </html>

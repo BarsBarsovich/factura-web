@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import "./media.scss";
 @import "_common";
+@import "./components/map.scss";
 @import "./components/header.scss";
 @import "./components/gallery.scss";
 @import "./components/card.scss";

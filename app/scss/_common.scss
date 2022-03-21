@@ -1,6 +1,6 @@
 body,
 html {
-  height: 100%;
+  height: 100vh;
 }
 
 p {
@@ -27,7 +27,7 @@ a {
 }
 
 body {
-    font-family: Helvatica, sans-serif;
+  font-family: Helvatica, sans-serif;
 }
 
 .layout {
@@ -42,11 +42,23 @@ body {
 
 .container {
   width: 1200px;
+  @include tablets() {
+    width: 800px;
+  }
   margin: 0 auto;
 }
 
-img  {
+img {
   display: block;
   width: 100%;
   object-fit: cover;
+  @include tablets() {
+    height: 100%;
+  }
+}
+
+.mobile{
+  @include tablets(){
+    height: 100%;
+  }
 }

@@ -1,14 +1,20 @@
 .gallery {
   display: grid;
   grid-template: 1fr / 1fr minmax(auto, 1200px) 1fr;
+  @include tablets(){
+    grid-template: 1fr / 1fr minmax(auto, 800px) 1fr;
+  }
 
   &__container {
     grid-column: 2/3;
     display: grid;
     gap: 24px;
-    grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));    
     margin-bottom: 120px;
     width: 100%;
+    @include tablets() {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));    
+    }
 
     &_mb-40 {
       margin-bottom: 41px;
@@ -33,6 +39,19 @@
       width: 795px;
       &_wide {
         width: 808px;
+        @include tablets(){
+          width: 100%;
+        }  
+      }
+
+      @include tablets(){
+        width: 100%;
+      }
+      &_mobile{
+        @include tablets(){
+          width: 525px;
+          height: 100%;
+        }
       }
     }
 
@@ -43,6 +62,10 @@
 
   &__description {
     margin-left: 36px;
+    @include tablets() {
+      margin-left: 26px;
+      max-width: 65%;
+    }
 
     &_height {
       height: 100%;
@@ -57,13 +80,9 @@
     font-size: 22px;
     color: #000000;
     margin-bottom: 15px;
-
-    //&_font {
-    //  font-family: Roboto;
-    //  font-weight: 300;
-    //  line-height: 26px;
-    //}
-
+    @include tablets(){
+      font-size: 16px;
+    }
 
     &:last-child {
       margin-bottom: 0;
