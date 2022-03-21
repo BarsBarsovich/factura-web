@@ -7,6 +7,8 @@
     <title>Контакты</title>
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
   </head>
   <body>
     <div class="wrapper layout">
@@ -31,21 +33,25 @@
         <div class="gallery">
           <div class="gallery__container container">
             <div class="gallery__card">
-              <picture>
+              <div id="map"></div>
+              <!-- <picture>
                 <img
                   src="./img/map.png"
                   loading="lazy"
                   alt=""
                   class="gallery__card-logo gallery__card-logo_big"
                 />
-              </picture>
+              </picture> -->
               <div class="gallery__description">
-                <p class="gallery__text">пн — пт <br/> 10:00 — 19:00</p>
+                <p class="gallery__text">
+                  пн — пт <br />
+                  10:00 — 19:00
+                </p>
 
                 <p class="gallery__text">
-                  +7 (995) 595-90-95 — производство <br/>
-                  +7 (931) 289-77-50 — Станислав  <br/>
-                  +7 (921) 580-33-69 — Данил <br/>
+                  +7 (995) 595-90-95 — производство <br />
+                  +7 (931) 289-77-50 — Станислав <br />
+                  +7 (921) 580-33-69 — Данил <br />
                 </p>
 
                 <a href="mailto:hello@factura-factory.com" class="footer__text">
@@ -79,5 +85,6 @@
         </div>
       </footer>
     </div>
+    <script src="./js/map.js"></script>
   </body>
 </html>

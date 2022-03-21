@@ -54,6 +54,10 @@ img {
   .mobile {
     height: 100%; } }
 
+#map {
+  width: 805px;
+  height: 683px; }
+
 .header {
   grid-area: header;
   display: grid;
