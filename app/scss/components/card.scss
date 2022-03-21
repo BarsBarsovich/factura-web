@@ -60,11 +60,17 @@
       @include tablets() {
         height: 1143px;
       }
+      @include phones() {
+        height: 100%;
+      }
     }
   }
 
   &_big {
     grid-column: span 2;
+    @include phones(){
+      grid-column: span 1;
+    }
   }
 
   &_wide {
@@ -78,12 +84,15 @@
 
   &_ml29 {
     margin-left: 29px;
-    @include tablets(){
+    @include tablets() {
       margin-left: 0;
     }
   }
 
   &_ml18 {
     margin-left: 18px;
+    @include phones() {
+      margin-left: 0;
+    }
   }
 }

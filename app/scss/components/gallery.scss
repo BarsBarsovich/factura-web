@@ -1,19 +1,28 @@
 .gallery {
   display: grid;
   grid-template: 1fr / 1fr minmax(auto, 1200px) 1fr;
-  @include tablets(){
+  @include tablets() {
     grid-template: 1fr / 1fr minmax(auto, 800px) 1fr;
   }
 
+  @include phones() {
+    grid-template: 1fr / 1fr minmax(auto, 90%) 1fr;
+  }
   &__container {
     grid-column: 2/3;
     display: grid;
     gap: 24px;
-    grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));    
+    grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
     margin-bottom: 120px;
     width: 100%;
     @include tablets() {
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));    
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    @include phones() {
+      display: flex;
+      flex-direction: column;
+      
     }
 
     &_mb-40 {
@@ -22,7 +31,7 @@
 
     &_hidden {
       display: none;
-      transition: all .3s ease-in-out;
+      transition: all 0.3s ease-in-out;
     }
 
     &_show {
@@ -34,23 +43,29 @@
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
+    @include phones() {
+      flex-direction: column;
+    }
 
     &-logo {
       width: 795px;
       &_wide {
         width: 808px;
-        @include tablets(){
+        @include tablets() {
           width: 100%;
-        }  
+        }
       }
 
-      @include tablets(){
+      @include tablets() {
         width: 100%;
       }
-      &_mobile{
-        @include tablets(){
+      &_mobile {
+        @include tablets() {
           width: 525px;
           height: 100%;
+        }
+        @include phones() {
+          width: 100%;
         }
       }
     }
@@ -67,6 +82,12 @@
       max-width: 65%;
     }
 
+    @include phones() {
+      margin-left: 0;
+      max-width: 100%;
+      margin-top: 18px;
+    }
+
     &_height {
       height: 100%;
       display: flex;
@@ -80,8 +101,12 @@
     font-size: 22px;
     color: #000000;
     margin-bottom: 15px;
-    @include tablets(){
+    @include tablets() {
       font-size: 16px;
+    }
+
+    @include phones() {
+      font-size: 22px;
     }
 
     &:last-child {

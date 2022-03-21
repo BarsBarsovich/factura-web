@@ -6,6 +6,9 @@
   @include tablets(){
     grid-template: 1fr / 1fr minmax(auto, 800px) 1fr;
   }
+  @include phones(){
+    grid-template: 1fr / 1fr minmax(auto, 90%) 1fr;
+  }
 
   &__container {
     grid-column: 2/3;

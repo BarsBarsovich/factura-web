@@ -37,6 +37,9 @@ body {
   @media screen and (max-width: 992px) {
     .container {
       width: 800px; } }
+  @media screen and (max-width: 768px) {
+    .container {
+      width: 100%; } }
 
 img {
   display: block;
@@ -61,6 +64,9 @@ img {
   @media screen and (max-width: 992px) {
     .header {
       grid-template: 1fr/1fr minmax(auto, 800px) 1fr; } }
+  @media screen and (max-width: 768px) {
+    .header {
+      grid-template: 1fr/1fr minmax(auto, 90%) 1fr; } }
   .header__container {
     grid-column: 2/3;
     display: -webkit-box;
@@ -118,6 +124,9 @@ img {
   @media screen and (max-width: 992px) {
     .gallery {
       grid-template: 1fr/1fr minmax(auto, 800px) 1fr; } }
+  @media screen and (max-width: 768px) {
+    .gallery {
+      grid-template: 1fr/1fr minmax(auto, 90%) 1fr; } }
   .gallery__container {
     grid-column: 2/3;
     display: grid;
@@ -128,13 +137,22 @@ img {
     @media screen and (max-width: 992px) {
       .gallery__container {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); } }
+    @media screen and (max-width: 768px) {
+      .gallery__container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
     .gallery__container_mb-40 {
       margin-bottom: 41px; }
     .gallery__container_hidden {
       display: none;
-      -webkit-transition: all .3s ease-in-out;
-      -o-transition: all .3s ease-in-out;
-      transition: all .3s ease-in-out; }
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
     .gallery__container_show {
       display: block; }
   .gallery__card {
@@ -147,6 +165,12 @@ img {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
+    @media screen and (max-width: 768px) {
+      .gallery__card {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
     .gallery__card-logo {
       width: 795px; }
       .gallery__card-logo_wide {
@@ -161,6 +185,9 @@ img {
         .gallery__card-logo_mobile {
           width: 525px;
           height: 100%; } }
+      @media screen and (max-width: 768px) {
+        .gallery__card-logo_mobile {
+          width: 100%; } }
     .gallery__card_big {
       grid-column: span 2; }
   .gallery__description {
@@ -169,6 +196,11 @@ img {
       .gallery__description {
         margin-left: 26px;
         max-width: 65%; } }
+    @media screen and (max-width: 768px) {
+      .gallery__description {
+        margin-left: 0;
+        max-width: 100%;
+        margin-top: 18px; } }
     .gallery__description_height {
       height: 100%;
       display: -webkit-box;
@@ -189,6 +221,9 @@ img {
     @media screen and (max-width: 992px) {
       .gallery__text {
         font-size: 16px; } }
+    @media screen and (max-width: 768px) {
+      .gallery__text {
+        font-size: 22px; } }
     .gallery__text:last-child {
       margin-bottom: 0; }
 
@@ -239,8 +274,14 @@ img {
       @media screen and (max-width: 992px) {
         .card__photo_h99 {
           height: 1143px; } }
+      @media screen and (max-width: 768px) {
+        .card__photo_h99 {
+          height: 100%; } }
   .card_big {
     grid-column: span 2; }
+    @media screen and (max-width: 768px) {
+      .card_big {
+        grid-column: span 1; } }
   .card_wide {
     grid-column: span 3; }
   .card_height {
@@ -253,6 +294,9 @@ img {
         margin-left: 0; } }
   .card_ml18 {
     margin-left: 18px; }
+    @media screen and (max-width: 768px) {
+      .card_ml18 {
+        margin-left: 0; } }
 
 .circle {
   width: 383px;
@@ -361,6 +405,12 @@ img {
   @media screen and (max-width: 992px) {
     .footer {
       grid-template: 1fr/1fr minmax(auto, 800px) 1fr; } }
+  @media screen and (max-width: 768px) {
+    .footer {
+      display: none; } }
+  @media screen and (max-width: 768px) {
+    .footer {
+      grid-template: 1fr/1fr minmax(auto, 100%) 1fr; } }
   .footer__container {
     grid-column: 2/3;
     display: -webkit-box;
