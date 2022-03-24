@@ -65,5 +65,13 @@ img {
 .mobile {
   @include tablets() {
     height: 100%;
+    width: 100%;
   }
+}
+.ml10 {
+  margin-left: 10px;
+}
+
+.w793 {
+  width: 793px;
 }

@@ -1,7 +1,7 @@
 .ellipse {
   width: 364px;
   height: 560px;
-  background: #E8E8E8;
+  background: #e8e8e8;
   //filter: blur(15px);
   border-radius: 280px;
   display: flex;
@@ -9,8 +9,17 @@
   font-weight: 300;
   font-size: 22px;
   color: #202020;
-  @include tablets(){
+  @include tablets() {
     width: 100%;
+  }
+
+  &__desc {
+    font-weight: 300;
+    font-size: 22px;
+    color: #ffffff;
+    &_black {
+      color: #000;
+    }
   }
 
   &_top {
@@ -21,11 +30,10 @@
     padding-right: 41px;
     padding-left: 41px;
     //height: 100%;
-
   }
 
   &_grey {
-    background: #999999
+    background: #999999;
   }
 
   &_green {
@@ -33,13 +41,12 @@
   }
 
   &_light-blue {
-    background: #C7D4DC;
+    background: #c7d4dc;
   }
 
   &_orange {
-    background: #FA8C31;
+    background: #fa8c31;
   }
-
 
   &__text {
     margin-top: -207px;

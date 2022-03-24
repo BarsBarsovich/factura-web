@@ -5,6 +5,13 @@
   &__logo {
     max-width: 383px;
     max-height: 288px;
+    &_big {
+      width: 386px;
+      height: 557px;
+      @include phones() {
+        width: 100%;
+      }
+    }
   }
 
   &__title {
@@ -68,7 +75,7 @@
 
   &_big {
     grid-column: span 2;
-    @include phones(){
+    @include phones() {
       grid-column: span 1;
     }
   }
