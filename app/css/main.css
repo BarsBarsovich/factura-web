@@ -65,6 +65,21 @@ img {
   width: 805px;
   height: 683px; }
 
+.map-text {
+  font-weight: 300;
+  font-size: 22px;
+  color: #000;
+  margin-top: 10px;
+  white-space: nowrap;
+  display: block; }
+  .map-text:first-child {
+    margin-top: 0; }
+
+.map-link {
+  font-weight: 300;
+  font-size: 22px;
+  color: #000; }
+
 .header {
   grid-area: header;
   display: grid;
@@ -108,7 +123,8 @@ img {
     height: 54px;
     font-size: 25px;
     line-height: 29px;
-    color: #000000; }
+    color: #000000;
+    font-weight: 300; }
     .header__button-link:hover {
       background: #f27106; }
   .header__button-connect {
@@ -125,7 +141,7 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    font-weight: normal;
+    font-weight: 300;
     font-size: 20px;
     color: #000000; }
 
@@ -363,7 +379,7 @@ img {
     height: 36px;
     border: 2px solid #000000;
     border-radius: 30px;
-    font-weight: normal;
+    font-weight: 300;
     font-size: 20px;
     color: #000000; }
 
@@ -384,7 +400,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-weight: normal;
+  font-weight: 300;
   font-size: 20px;
   color: #FA8C31;
   cursor: pointer; }

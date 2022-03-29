@@ -2,3 +2,21 @@
   width: 805px;
   height: 683px;
 }
+
+.map-text {
+  font-weight: 300;
+  font-size: 22px;
+  color: #000;
+  margin-top: 10px;
+  white-space: nowrap;
+  display: block;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.map-link {
+  font-weight: 300;
+  font-size: 22px;
+  color: #000;
+}

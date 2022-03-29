@@ -1,32 +1,28 @@
 .footer {
-  display: grid;
-  grid-template: 1fr / 1fr minmax(auto, 1200px) 1fr;
-  @include tablets() {
-    grid-template: 1fr / 1fr minmax(auto, 800px) 1fr;
-  }
-
-  @include phones() {
-    display: none;
-  }
-
-  @include phones() {
-    grid-template: 1fr / 1fr minmax(auto, 100%) 1fr;
-  }
-  &__container {
-    grid-column: 2/3;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  &__instagram-link {
-    font-size: 20px;
-    color: #fa8c31;
-  }
-
-  &__text {
-    font-weight: 300;
-    font-size: 20px;
-    color: #000000;
-  }
+    display: grid;
+    grid-template: 1fr / 1fr minmax(auto, 1200px) 1fr;
+    @include tablets() {
+        grid-template: 1fr / 1fr minmax(auto, 800px) 1fr;
+    }
+    @include phones() {
+        display: none;
+    }
+    @include phones() {
+        grid-template: 1fr / 1fr minmax(auto, 100%) 1fr;
+    }
+    &__container {
+        grid-column: 2/3;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__instagram-link {
+        font-size: 20px;
+        color: #fa8c31;
+    }
+    &__text {
+        font-weight: 300;
+        font-size: 20px;
+        color: #000000;
+    }
 }

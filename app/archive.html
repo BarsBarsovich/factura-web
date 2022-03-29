@@ -1,386 +1,363 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/normalize.css"/>
-    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
 </head>
+
 <body>
-<div class="wrapper layout">
-    <header class="header">
-        <div class="header__container container">
-            <div class="header__logo">
-                <a href="/" class="">
-                    <img src="./img/logo.svg" loading="lazy" alt="" class="header__logo-img"/>
-                </a>
+    <div class="wrapper layout">
+        <header class="header">
+            <div class="header__container container">
+                <div class="header__logo">
+                    <a href="/" class="">
+                        <img src="./img/logo.svg" loading="lazy" alt="" class="header__logo-img" />
+                    </a>
+                </div>
+                <div class="header__button">
+                    <a href="#" class="header__button-connect">connect</a>
+                </div>
             </div>
-            <div class="header__button">
-                <a href="#" class="header__button-connect">connect</a>
+        </header>
+        <main class="main">
+            <div class="gallery">
+                <div class="gallery__container container">
+                    <div class="card">
+                        <div class="ellipse">
+                            <div class="ellipse__container">
+                                <p>
+                                    Архив — проекты разных лет, которые не вошли в подборку актуальных, но являются не менее значимыми для нашей мастерской
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="ellipse ellipse_grey">
+                            <div class="ellipse__container ellipse__text">
+                                <p>2020 — 2021</p>
+
+                                <p>ФУТУРА бар Fjord</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo" />
+                        </picture>
+                    </div>
+                    <!--                второй, третий -->
+                    <div class="card">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo" />
+                        </picture>
+                    </div>
+                    <div class="card card_big">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_wide" />
+                        </picture>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo" />
+                        </picture>
+                    </div>
+                    <div class="card card_big">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_wide" />
+                        </picture>
+                    </div>
+                    <!--                четвертый ряд-->
+                    <div class="card">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo" />
+                        </picture>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo" />
+                        </picture>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo" />
+                        </picture>
+                    </div>
+                    <!--                пятый ряд, фотка на два строки-->
+                    <div class="card card_height">
+                        <picture>
+                            <img src="./img/big.png" srcset="./img/big.png 2x" loading="lazy" alt="" class="card__photo card__photo_big" />
+                        </picture>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_medium-height" />
+                        </picture>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_medium-height" />
+                        </picture>
+                    </div>
+                    <!--                строка с архивом-->
+                    <div class="card">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo" />
+                        </picture>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo" />
+                        </picture>
+                    </div>
+                    <div class="card">
+                        <div class="ellipse ellipse_green">
+                            <div class="ellipse__container ellipse__text">
+                                <p>2019</p>
+
+                                <p>108 burgers Kompromiss O’petit Oh, my dog Mozarella</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo" />
+                        </picture>
+                    </div>
+                    <div class="card card_big">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_wide" />
+                        </picture>
+                    </div>
+                    <div class="card card_height">
+                        <picture>
+                            <img src="./img/big.png" srcset="./img/big.png 2x" loading="lazy" alt="" class="card__photo card__photo_big" />
+                        </picture>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_medium-height" />
+                        </picture>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="./img/chairs.png" loading="lazy" alt="" class="card__photo card__photo_medium-height" />
+                        </picture>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo" />
+                        </picture>
+                    </div>
+                    <div class="card card_big">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_wide" />
+                        </picture>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo" />
+                        </picture>
+                    </div>
+                    <div class="card card_big">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_wide" />
+                        </picture>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo" />
+                        </picture>
+                    </div>
+                    <div class="card card_big">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_wide" />
+                        </picture>
+                    </div>
+                    <div class="card card_wide">
+                        <picture>
+                            <img src="./img/wide.png" srcset="./img/wide.png 2x" loading="lazy" alt="" class="card__photo card__photo_wide" />
+                        </picture>
+                    </div>
+                    <div class="card card_height">
+                        <picture>
+                            <img src="./img/big.png" srcset="./img/big.png 2x" loading="lazy" alt="" class="card__photo card__photo_big" />
+                        </picture>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_medium-height" />
+                        </picture>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_medium-height" />
+                        </picture>
+                    </div>
+                    <!--                строка с архивом 2018-->
+                    <div class="card">
+                        <div class="ellipse ellipse_light-blue">
+                            <div class="ellipse__container ellipse__text">
+                                <p>2018</p>
+
+                                <p>Dualist САД Ronny bistro Бивень</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo" />
+                        </picture>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo" />
+                        </picture>
+                    </div>
+                    <div class="card card_height">
+                        <picture>
+                            <img src="./img/big.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_big" />
+                        </picture>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_medium-height" />
+                        </picture>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_medium-height" />
+                        </picture>
+                    </div>
+                    <div class="card card_big">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_wide" />
+                        </picture>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo" />
+                        </picture>
+                    </div>
+                    <div class="card card_big">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_wide" />
+                        </picture>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo" />
+                        </picture>
+                    </div>
+                    <div class="card card_wide">
+                        <picture>
+                            <img src="./img/wide.png" srcset="./img/wide.png 2x" loading="lazy" alt="" class="card__photo card__photo_wide" />
+                        </picture>
+                    </div>
+                    <div class="card">
+                        <div class="ellipse ellipse_orange">
+                            <div class="ellipse__container ellipse__text">
+                                <p>2017</p>
+                                <p>Julia Child Компания Зелёный сад Микрокофейня ТЧК</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card_big">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_wide" />
+                        </picture>
+                    </div>
+                    <div class="card card_height">
+                        <picture>
+                            <img src="./img/big.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_big" />
+                        </picture>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_medium-height" />
+                        </picture>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_medium-height" />
+                        </picture>
+                    </div>
+                    <div class="card card_big">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_wide" />
+                        </picture>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo" />
+                        </picture>
+                    </div>
+                    <div class="card card_big">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_wide" />
+                        </picture>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo" />
+                        </picture>
+                    </div>
+                    <div class="card card_height">
+                        <picture>
+                            <img src="./img/big.png" srcset="./img/big.png 2x" loading="lazy" alt="" class="card__photo card__photo_big" />
+                        </picture>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_medium-height" />
+                        </picture>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_medium-height" />
+                        </picture>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo" />
+                        </picture>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo" />
+                        </picture>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo" />
+                        </picture>
+                    </div>
+                </div>
             </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__instagram">
+                    <a href="#" class="footer__instagram-link"> telegram </a>
+                </div>
+                <div class="footer__phone">
+                    <a href="tel:+79955959095" class="footer__text">+7 (995) 595-90-95</a
+            >
+          </div>
+          <div class="footer__email">
+            <a href="mailto:hello@factura-factory.com" class="footer__text"
+              >hello@factura-factory.com</a
+            >
+          </div>
+          <div class="footer__address">
+            <span class="footer__text"> Санкт-Петербург, Салова 42 </span>
+          </div>
         </div>
-    </header>
-    <main class="main">
-        <div class="gallery">
-            <div class="gallery__container container">
-                <div class="card">
-                    <div class="ellipse">
-                        <div class="ellipse__container">
-                            <p>
-                                Архив — проекты разных лет, которые не вошли
-                                в подборку актуальных,
-                                но являются не менее
-                                значимыми для нашей мастерской
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="ellipse ellipse_grey">
-                        <div class="ellipse__container ellipse__text">
-                            <p>2020 — 2021</p>
-
-                            <p>ФУТУРА бар
-                                Fjord
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo">
-                    </picture>
-                </div>
-                <!--                второй, третий -->
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo">
-                    </picture>
-                </div>
-                <div class="card card_big">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_wide">
-                    </picture>
-                </div>
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo">
-                    </picture>
-                </div>
-                <div class="card card_big">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_wide">
-                    </picture>
-                </div>
-                <!--                четвертый ряд-->
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo">
-                    </picture>
-                </div>
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo">
-                    </picture>
-                </div>
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo">
-                    </picture>
-                </div>
-                <!--                пятый ряд, фотка на два строки-->
-                <div class="card card_height">
-                    <picture>
-                        <img src="./img/big.png" srcset="./img/big.png 2x" loading="lazy" alt="" class="card__photo card__photo_big">
-                    </picture>
-                </div>
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_medium-height">
-                    </picture>
-                </div>
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_medium-height">
-                    </picture>
-                </div>
-                <!--                строка с архивом-->
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo">
-                    </picture>
-                </div>
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png"  srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo">
-                    </picture>
-                </div>
-                <div class="card">
-                    <div class="ellipse ellipse_green">
-                        <div class="ellipse__container ellipse__text">
-                            <p>2019</p>
-
-                            <p>
-                                108 burgers
-                                Kompromiss
-                                O’petit
-                                Oh, my dog
-                                Mozarella
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo">
-                    </picture>
-                </div>
-                <div class="card card_big">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_wide">
-                    </picture>
-                </div>
-                <div class="card card_height">
-                    <picture>
-                        <img src="./img/big.png" srcset="./img/big.png 2x" loading="lazy" alt="" class="card__photo card__photo_big">
-                    </picture>
-                </div>
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_medium-height">
-                    </picture>
-                </div>
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" loading="lazy" alt="" class="card__photo card__photo_medium-height">
-                    </picture>
-                </div>
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo">
-                    </picture>
-                </div>
-                <div class="card card_big">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_wide">
-                    </picture>
-                </div>
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo">
-                    </picture>
-                </div>
-                <div class="card card_big">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_wide">
-                    </picture>
-                </div>
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo">
-                    </picture>
-                </div>
-                <div class="card card_big">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_wide">
-                    </picture>
-                </div>
-                <div class="card card_wide">
-                    <picture>
-                        <img src="./img/wide.png" srcset="./img/wide.png 2x" loading="lazy" alt="" class="card__photo card__photo_wide">
-                    </picture>
-                </div>
-                <div class="card card_height">
-                    <picture>
-                        <img src="./img/big.png" srcset="./img/big.png 2x" loading="lazy" alt="" class="card__photo card__photo_big">
-                    </picture>
-                </div>
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_medium-height">
-                    </picture>
-                </div>
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_medium-height">
-                    </picture>
-                </div>
-                <!--                строка с архивом 2018-->
-                <div class="card">
-                    <div class="ellipse ellipse_light-blue">
-                        <div class="ellipse__container ellipse__text">
-                            <p>2018</p>
-
-                            <p>
-                                Dualist
-                                САД
-                                Ronny bistro
-                                Бивень
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo">
-                    </picture>
-                </div>
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo">
-                    </picture>
-                </div>
-                <div class="card card_height">
-                    <picture>
-                        <img src="./img/big.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_big">
-                    </picture>
-                </div>
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_medium-height">
-                    </picture>
-                </div>
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_medium-height">
-                    </picture>
-                </div>
-                <div class="card card_big">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_wide">
-                    </picture>
-                </div>
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo">
-                    </picture>
-                </div>
-                <div class="card card_big">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x"  loading="lazy" alt="" class="card__photo card__photo_wide">
-                    </picture>
-                </div>
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo">
-                    </picture>
-                </div>
-                <div class="card card_wide">
-                    <picture>
-                        <img src="./img/wide.png" srcset="./img/wide.png 2x" loading="lazy" alt="" class="card__photo card__photo_wide">
-                    </picture>
-                </div>
-                <div class="card">
-                    <div class="ellipse ellipse_orange">
-                        <div class="ellipse__container ellipse__text">
-                            <p>2017</p>
-                            <p>
-                                Julia Child
-                                Компания
-                                Зелёный сад
-                                Микрокофейня ТЧК
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card_big">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_wide">
-                    </picture>
-                </div>
-                <div class="card card_height">
-                    <picture>
-                        <img src="./img/big.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_big">
-                    </picture>
-                </div>
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_medium-height">
-                    </picture>
-                </div>
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_medium-height">
-                    </picture>
-                </div>
-                <div class="card card_big">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_wide">
-                    </picture>
-                </div>
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo">
-                    </picture>
-                </div>
-                <div class="card card_big">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_wide">
-                    </picture>
-                </div>
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo">
-                    </picture>
-                </div>
-                <div class="card card_height">
-                    <picture>
-                        <img src="./img/big.png" srcset="./img/big.png 2x" loading="lazy" alt="" class="card__photo card__photo_big">
-                    </picture>
-                </div>
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_medium-height">
-                    </picture>
-                </div>
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo card__photo_medium-height">
-                    </picture>
-                </div>
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo">
-                    </picture>
-                </div>
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo">
-                    </picture>
-                </div>
-                <div class="card">
-                    <picture>
-                        <img src="./img/chairs.png" srcset="./img/chairs.png 2x" loading="lazy" alt="" class="card__photo">
-                    </picture>
-                </div>
-
-
-            </div>
-        </div>
-
-    </main>
-    <footer class="footer">
-        <div class="footer__container container">
-            <div class="footer__instagram">
-                <a href="#" class="footer__instagram-link"> instagram </a>
-            </div>
-            <div class="footer__phone">
-                <a href="tel:+79955959095" class="footer__text"
-                >+7 (995) 595-90-95</a
-                >
-            </div>
-            <div class="footer__email">
-                <a href="mailto:hello@factura-factory.com" class="footer__text"
-                >hello@factura-factory.com</a
-                >
-            </div>
-            <div class="footer__address">
-                <span class="footer__text"> Санкт-Петербург, Салова 42 </span>
-            </div>
-        </div>
-    </footer>
-</div>
-</body>
+      </footer>
+    </div>
+  </body>
 </html>
