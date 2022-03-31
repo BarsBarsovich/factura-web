@@ -26,6 +26,7 @@ body {
   font-family: Helvatica, sans-serif; }
 
 .layout {
+  overflow-x: hidden;
   display: grid;
   min-height: 100%;
   grid-template: minmax(80px, auto) 1fr minmax(70px, auto)/1fr;
@@ -403,7 +404,8 @@ img {
   font-weight: 300;
   font-size: 20px;
   color: #FA8C31;
-  cursor: pointer; }
+  cursor: pointer;
+  white-space: nowrap; }
 
 .ellipse {
   width: 364px;
