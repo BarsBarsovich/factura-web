@@ -3,11 +3,20 @@
   display: grid;
   grid-template: 1fr / 1fr minmax(auto, 1200px) 1fr;
   align-items: center;
-  @include tablets(){
+  @include tablets() {
     grid-template: 1fr / 1fr minmax(auto, 800px) 1fr;
   }
-  @include phones(){
+  @include phones() {
     grid-template: 1fr / 1fr minmax(auto, 90%) 1fr;
+  }
+
+  &__logo {
+    &-img {
+      @include phones() {
+        width: 76px;
+        height: 35px;
+      }
+    }
   }
 
   &__container {
@@ -15,7 +24,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
   }
 
   &__button {
@@ -32,10 +40,14 @@
       line-height: 29px;
       color: #000000;
       font-weight: 300;
-      &:hover{
+      &:hover {
         background: darken(#fa8c31, 10%);
       }
-      //   padding-right: 15px;
+      @include phones() {
+        width: 88px;
+        height: 35px;
+        font-size: 15px;
+      }      
     }
 
     &-connect {
@@ -49,6 +61,11 @@
       font-weight: 300;
       font-size: 20px;
       color: #000000;
+      @include phones() {
+        width: 88px;
+        height: 35px;
+        font-size: 15px;
+      }
     }
   }
 }

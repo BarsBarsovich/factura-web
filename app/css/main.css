@@ -94,6 +94,10 @@ img {
   @media screen and (max-width: 768px) {
     .header {
       grid-template: 1fr/1fr minmax(auto, 90%) 1fr; } }
+  @media screen and (max-width: 768px) {
+    .header__logo-img {
+      width: 76px;
+      height: 35px; } }
   .header__container {
     grid-column: 2/3;
     display: -webkit-box;
@@ -128,6 +132,11 @@ img {
     font-weight: 300; }
     .header__button-link:hover {
       background: #f27106; }
+    @media screen and (max-width: 768px) {
+      .header__button-link {
+        width: 88px;
+        height: 35px;
+        font-size: 15px; } }
   .header__button-connect {
     width: 122px;
     height: 36px;
@@ -145,6 +154,11 @@ img {
     font-weight: 300;
     font-size: 20px;
     color: #000000; }
+    @media screen and (max-width: 768px) {
+      .header__button-connect {
+        width: 88px;
+        height: 35px;
+        font-size: 15px; } }
 
 .gallery {
   display: grid;
@@ -355,6 +369,9 @@ img {
   @media screen and (max-width: 992px) {
     .next-project {
       grid-template: 1fr/1fr minmax(auto, 800px) 1fr; } }
+  @media screen and (max-width: 768px) {
+    .next-project {
+      margin-top: -20px; } }
   .next-project__container {
     grid-column: 2/3;
     display: -webkit-box;
@@ -377,7 +394,7 @@ img {
         -ms-flex-pack: center;
             justify-content: center;
     width: 257px;
-    height: 36px;
+    height: 33px;
     border: 2px solid #000000;
     border-radius: 30px;
     font-weight: 300;
@@ -405,7 +422,8 @@ img {
   font-size: 20px;
   color: #FA8C31;
   cursor: pointer;
-  white-space: nowrap; }
+  white-space: nowrap;
+  margin-right: 15px; }
 
 .ellipse {
   width: 364px;
@@ -473,7 +491,8 @@ img {
             justify-content: space-between; }
   .footer__instagram-link {
     font-size: 20px;
-    color: #fa8c31; }
+    color: #fa8c31;
+    font-weight: 300; }
   .footer__text {
     font-weight: 300;
     font-size: 20px;
