@@ -8,7 +8,7 @@
         display: none;
     }
     @include phones() {
-        grid-template: 1fr / 1fr minmax(auto, 100%) 1fr;
+        grid-template: 1fr / 1fr minmax(auto, 100%) 2.5fr;
     }
     &__container {
         grid-column: 2/3;

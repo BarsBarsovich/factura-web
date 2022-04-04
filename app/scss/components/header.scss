@@ -7,7 +7,7 @@
     grid-template: 1fr / 1fr minmax(auto, 800px) 1fr;
   }
   @include phones() {
-    grid-template: 1fr / 1fr minmax(auto, 90%) 1fr;
+    grid-template: 1fr / 1fr minmax(auto, 90%) 2.5fr;
   }
 
   &__logo {
@@ -30,7 +30,7 @@
     &-link {
       background: #fa8c31;
       border-radius: 30px;
-      transform: rotate(5.16deg);
+      // transform: rotate(5.16deg);
       display: flex;
       align-items: center;
       justify-content: center;
