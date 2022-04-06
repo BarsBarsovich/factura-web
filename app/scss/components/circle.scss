@@ -4,4 +4,7 @@
   background: #e8e8e8;
   filter: blur(15px);
   border-radius: 146px;
+  @include phones(){
+    max-width: 99%;
+  }
 }

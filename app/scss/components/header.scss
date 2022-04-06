@@ -7,11 +7,17 @@
     grid-template: 1fr / 1fr minmax(auto, 800px) 1fr;
   }
   @include phones() {
+    grid-template: 1fr / 1fr minmax(auto, 90%) 1fr;
+  }
+  @include smallPhones() {
     grid-template: 1fr / 1fr minmax(auto, 90%) 2.5fr;
   }
 
+
   &__logo {
     &-img {
+      width: 232px;
+      height: 106px;
       @include phones() {
         width: 76px;
         height: 35px;
@@ -47,7 +53,7 @@
         width: 88px;
         height: 35px;
         font-size: 15px;
-      }      
+      }
     }
 
     &-connect {
