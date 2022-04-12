@@ -45,7 +45,7 @@
       font-size: 25px;
       line-height: 29px;
       color: #000000;
-      font-weight: 300;
+      font-weight: 400;
       &:hover {
         background: darken(#fa8c31, 10%);
       }
@@ -64,7 +64,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-weight: 300;
+      font-weight: 400;
       font-size: 20px;
       color: #000000;
       @include phones() {

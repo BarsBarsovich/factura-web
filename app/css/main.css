@@ -23,7 +23,7 @@ a {
   text-decoration: none; }
 
 body {
-  font-family: Helvatica, sans-serif; }
+  font-family: Helvetica, sans-serif; }
 
 .layout {
   overflow-x: hidden;
@@ -132,7 +132,7 @@ img {
     font-size: 25px;
     line-height: 29px;
     color: #000000;
-    font-weight: 300; }
+    font-weight: 400; }
     .header__button-link:hover {
       background: #f27106; }
     @media screen and (max-width: 768px) {
@@ -154,7 +154,7 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 20px;
     color: #000000; }
     @media screen and (max-width: 768px) {
